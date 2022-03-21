@@ -1,0 +1,218 @@
+
+*{
+    margin: 0;
+    padding: 0;
+}
+/* Header section */
+
+
+.header-left img{
+    object-fit: contain;
+    height: 40px;
+    width: 109px;
+    margin-left: 5px;
+}
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid whitesmoke;
+    background-color: whitesmoke;
+}
+
+.header-left span{
+    cursor: pointer;
+}
+
+.header-middle{
+    display: flex;
+    align-items: center;
+    /* width: 100%; */
+    /* background-color: whitesmoke;  */
+}
+.header-middle input{
+    border: none;
+     padding: 10px;
+     outline: none;
+   font-size: medium;
+     background-color: transparent;
+    width: 100%;
+}
+.material-icons{
+    color: #5f6368;
+}
+.header-right{
+    display: flex;
+    padding-right: 20px;
+}
+.header-right span{
+    display: flex;
+    padding-right: 10px;
+    cursor: pointer;
+}
+/* sidebar */
+.sidebar{
+    flex: 0.3;
+    max-width: 300px;
+   padding-right: 20px;
+}
+.sidebar-compose{
+    display: flex;
+    align-items:center;
+    color: gray;
+    border-radius: 300px;
+    background-color: white;
+   margin-top: 15px;
+   margin-left: 10px;
+   margin-bottom: 15px;
+   padding:15px;
+   border: none;
+   box-shadow: 1px 1px 1px 1px;
+ cursor: pointer;
+ text-transform: capitalize;
+}
+.sidebar-compose span{
+    margin-left: 5px;
+}
+.sidebar-option{
+    display: flex;
+    align-items:center;
+    color: #818181;
+    height: 40px;
+    padding:0 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+}
+
+.sidebar-option .material-icons{
+    padding: 5px;
+}
+.sidebar-footer{
+    
+    display: flex;
+    align-items:center;
+    color: #818181;
+    height: 40px;
+    padding:0 10px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    cursor: pointer;
+}
+/* .sidebar-footer .material-icons{
+    margin: 7px;
+    cursor: pointer;
+} */
+
+/* Main body starts */ 
+.mainbody{
+display: flex;
+ height: 100vh;
+}
+ body{
+     overflow-y: hidden;
+ }
+
+ /* email-list styling starts here */
+ .email-list{
+     overflow: scroll;
+     flex: 1;
+ }
+ .email-list-settings{
+     position: sticky;
+     top: 0;
+     display: flex;
+     justify-content: space-between;
+     background-color: white;
+     border-bottom: 1px solid whitesmoke;
+     z-index: 999;
+     padding: 8px;
+ }
+ .email-list-settings-left{
+     display: flex;
+     align-items: center;
+
+ }
+ .email-list-settings- .material-icons{
+     margin: 5px;
+     cursor: pointer;
+ }
+ .section{
+     display: flex;
+     align-items: center;
+     border-bottom-width: 2px;
+     padding: 15px;
+     min-width: 200px;
+     cursor:pointer;
+     color: grey;
+     border-width:0;
+ }
+ .email-list-sections{
+  position: sticky;
+  top: 0;
+  display: flex;
+  background-color: white;
+  border-bottom: 1px solid whitesmoke;
+  z-index: 999;
+ }
+ .section-selecetd{
+     background-color:whitesmoke;
+     border-width: 3px;
+     color: red;
+     border-bottom: 3px solid red;
+ }
+ .section:hover{
+     background-color: whitesmoke;
+     border-width: 3px;
+ }
+
+ .section h4{
+     font-size: 14px;
+     margin-left: 15px;
+ }
+ .emailrow-options{
+     display: flex;
+     align-items: center;
+ }
+ .emailrow-options .material-icons,input{
+     margin: 5px;
+ }
+ .emailrow{
+     display: flex;
+     align-items: center;
+     height: 50px;
+     border-bottom: 1px solid whitesmoke;
+     cursor: pointer;
+     z-index: 999;
+ }
+ .emailrow:hover{
+     border-top: 1px solid whitesmoke;
+     box-shadow: 0 4px -2px rgba(0, 0, 0, 0.24);
+ }
+ .emailrow-message{
+     display: flex;
+     flex: 0.8;
+     align-items: center;
+     font-size: 15px;
+ }
+ emailrow-message h4{
+     width: 400px;
+     white-space: nowrap;
+     overflow: hidden;
+     text-overflow: ellipsis;
+     padding-left: 5px;
+     padding-right: 5px;
+ }
+ .emailrow-title{
+     font-size: 13px;
+     flex: 0.3;
+ }
+ .emailrow-time{
+     padding-right: 15px;
+     font-size: 10px;
+     font-weight: bold;
+ }
+ .emailrow-description{
+     font-weight: 400;
+     color: grey;
+ }
